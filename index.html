@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive sidebar Menu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+
+    <!--  main/big screen device markup  -->
+
+<div class="sidebar">
+    <button class="dropdown-btn">Product & Inventory Management <i class=" icon fa-solid fa-angle-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Product Type Setup</a>
+        <a href="#">Attribute setup </a>
+        <a href="#">Product Entry</a>
+        <a href="#">All Product</a>
+    </div>
+
+    <button class="dropdown-btn">Product & Inventory Management <i class=" icon fa-solid fa-angle-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Material Current Stock </a>
+        <a href="#">Finished Goods</a>
+        <a href="#">Current Stock</a>
+        <a href="#">Packaging Current Stock</a>
+    </div>
+
+    <button class="dropdown-btn"> Point of Sales (POS) <i class=" icon fa-solid fa-angle-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a href="#">Invoice Generation</a>
+        <a href="#">All invoices</a>
+        <a href="#">Member Card Management</a>
+        <a href="#">Reports </a>
+    </div>    
+</div> 
+ 
+
+<!--  Mobile screen device markup  -->
+
+<div class="mobile-container">
+
+    <div class="sidebar">
+        <a href="javascript:void(0);" class="iconBar" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      <div id="myLinks">
+        <button class="dropdown-btn">Product & Inventory Management <i class=" icon fa-solid fa-angle-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Product Type Setup</a>
+            <a href="#">Attribute setup </a>
+            <a href="#">Product Entry</a>
+            <a href="#">All Product</a>
+        </div>
+
+        <button class="dropdown-btn">Product & Inventory Management <i class=" icon fa-solid fa-angle-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Material Current Stock </a>
+            <a href="#">Finished Goods</a>
+            <a href="#">Current Stock</a>
+            <a href="#">Packaging Current Stock</a>
+        </div>
+
+        <button class="dropdown-btn"> Point of Sales (POS) <i class=" icon fa-solid fa-angle-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Invoice Generation</a>
+            <a href="#">All invoices</a>
+            <a href="#">Member Card Management</a>
+            <a href="#">Reports </a>
+        </div>
+        
+      </div>
+      
+    </div>
+
+</div>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

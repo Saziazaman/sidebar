@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.sidebar {
+    width: 400px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.sidebar button{
+    padding: 20px 15px;
+    margin: 30px 0px 0px 0px ;
+}
+.sidebar a {
+    display: block;
+    color:white;
+    padding: 16px;
+    text-decoration: none;
+}
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.sidebar a:hover:not(.active) {
+    background-color: rgb(42, 62, 106);
+    color: white;
+}
+
+  /* sidenav links and the dropdown button */
+
+.sidenav a, .dropdown-btn {
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+  
+ /* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: white;
+    background-color: rgb(0, 41, 128);
+}
+
+  /* Add an active class to the active dropdown button */
+.active {
+    background-color: rgb(0, 41, 128);
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: rgb(126, 161, 234);
+}
+  
+/* Style the down icon */
+.icon {
+    float: right;
+    transition: .3s;
+}
+.icon:active{
+    transform: rotate(180deg);
+}
+ 
+/* Toggle button CSS for mobile */
+.mobile-container {
+    max-width: 400px;
+    display: none;
+}
+.topnav #myLinks {
+    display: none;
+}
+div#myLinks {
+    background-color: #f1f1f1;
+    display: none;
+}
+.sidebar a.iconBar {
+    background: rgb(0, 41, 128);
+}
+
+  /*  media queries for responsiveness */
+@media screen and (max-width: 425px) {
+
+    .mobile-container {
+        display: inline;
+        max-width: 100%;
+    }
+    .sidebar button{
+        font-size: 16px;
+    }
+    .sidebar {
+        max-width: 425px;
+    }
+
+}
